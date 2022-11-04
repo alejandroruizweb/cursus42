@@ -2,6 +2,6 @@
 Ejercicios del cursus 42malaga
 En este repositorio se encuentran los proyectos realizados para el Cursus de 42 Málaga. A no ser que se indique lo contrario no están evaluados.
 
-Libft --> 125/100
+### `Libft --> 125/100`
 
 In this repository you will find the projects carried out for the 42 Málaga Cursus. Unless otherwise indicated, they are not evaluated.
