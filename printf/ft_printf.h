@@ -6,7 +6,7 @@
 /*   By: alruiz-c <alruiz-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/25 12:56:08 by alruiz-c          #+#    #+#             */
-/*   Updated: 2022/11/07 19:08:06 by alruiz-c         ###   ########.fr       */
+/*   Updated: 2022/11/07 19:15:11 by alruiz-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,11 @@
 # include <stdlib.h>
 # include <unistd.h>
 
-/* Pruebo commit. La función principal usa un número de argumentos x (...), lo busca en 
+/* La función principal usa un número de argumentos x (...), lo busca en 
 *print. Va avanzando en la string e imprimiendo hasta que encuentra un %.
 Cuando lo encuentra avanza 1 caracter y hace lo que la función index 
 dice. Cuando usamos printf a parte de imprimir lo que sea nos devuelve 
-un número que coincide con los caracteres impresos. (i)*/
+un número que coincide con los caracteres impresos. (i) prueba prueba*/
 int		ft_printf(char const *print, ...);
 /* La función que imprime caracter a caracter. (*i)++ nos vale para contar 
 el número de caracteres impresos tal como hace el printf original */
