@@ -6,10 +6,12 @@
 /*   By: alruiz-c <alruiz-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/04 12:03:48 by alruiz-c          #+#    #+#             */
-/*   Updated: 2022/11/04 16:35:06 by alruiz-c         ###   ########.fr       */
+/*   Updated: 2022/11/07 17:22:10 by alruiz-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/* Esta función imprime un puntero de memoria. Lo hacemos imprimiendo un 0x y
+después la misma función que ft_printhex pero con unsigned long int*/
 #include "ft_printf.h"
 
 static void	ft_printpex(unsigned long int n, size_t *i)

@@ -6,10 +6,11 @@
 /*   By: alruiz-c <alruiz-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 13:38:49 by alruiz-c          #+#    #+#             */
-/*   Updated: 2022/11/04 11:24:43 by alruiz-c         ###   ########.fr       */
+/*   Updated: 2022/11/07 17:19:27 by alruiz-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/* La misma función que ft_printhex pero en mayúscula */
 #include "ft_printf.h"
 
 void	ft_printuphex(unsigned int n, size_t *i)

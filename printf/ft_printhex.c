@@ -6,10 +6,12 @@
 /*   By: alruiz-c <alruiz-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 13:22:29 by alruiz-c          #+#    #+#             */
-/*   Updated: 2022/11/04 16:35:54 by alruiz-c         ###   ########.fr       */
+/*   Updated: 2022/11/07 17:18:22 by alruiz-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/* Convierte a Hexadecimal minúscula cogiendo los caracteres del 
+base_character al dividirlo entre 16*/
 #include "ft_printf.h"
 
 void	ft_printhex(unsigned int n, size_t *i)

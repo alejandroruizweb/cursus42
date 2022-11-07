@@ -6,10 +6,15 @@
 /*   By: alruiz-c <alruiz-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 11:11:03 by alruiz-c          #+#    #+#             */
-/*   Updated: 2022/11/04 16:35:50 by alruiz-c         ###   ########.fr       */
+/*   Updated: 2022/11/07 16:33:09 by alruiz-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/* La función principal usa un número de argumentos x (...), lo busca en 
+*print. Va avanzando en la string e imprimiendo hasta que encuentra un %.
+Cuando lo encuentra avanza 1 caracter y hace lo que la función index 
+dice. Cuando usamos printf a parte de imprimir lo que sea nos devuelve 
+un número que coincide con los caracteres impresos. (i)*/
 #include "ft_printf.h"
 #include<stdio.h>
 
@@ -63,14 +68,14 @@ int	ft_printf(char const *print, ...)
 //int	main()
 //{
 //	char c;
-//	char a[50] = "que pasa";
+//	char a[50] = "";
 //	int n;
 //	int i;
 
 //	n = -1234645646;
 //	c = '0';
-//	printf("%p", a);
-	//printf("%p", &c);
+//	ft_printf("%s", a);
+//	printf("");
 	//i = ft_printf("%u\n", n);
 	//i = printf("%d\n", 123456);
 	//ft_printf("%d", i);

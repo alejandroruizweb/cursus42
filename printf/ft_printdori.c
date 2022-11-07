@@ -6,10 +6,12 @@
 /*   By: alruiz-c <alruiz-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 11:14:16 by alruiz-c          #+#    #+#             */
-/*   Updated: 2022/11/04 10:32:11 by alruiz-c         ###   ########.fr       */
+/*   Updated: 2022/11/07 16:58:11 by alruiz-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/* Si el caracter siguiente al % es d o i imprime un entero. Gestionando el
+máximo y los negativos */
 #include "ft_printf.h"
 
 void	ft_printdori(int n, size_t *i)
