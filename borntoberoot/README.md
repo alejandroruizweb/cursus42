@@ -52,6 +52,8 @@ Para poder crear nuestra máquina virtual Born2beroot necesitaremos dos cosas:
 Una vez instalado VirtualBox, podemos comenzar a configurar nuestra máquina virtual.
 https://github.com/alejandroruizweb/cursus42/blob/main/borntoberoot/001.png
 En la parte superior izquierda de la ventana principal de VirtualBox, haga clic en New para comenzar.
+
+Lo primero es ir a preferences en el menú de Virtual Box e introducir la ruta donde craer la VM.
 https://github.com/alejandroruizweb/cursus42/blob/main/borntoberoot/002.png
 Pongamos un nombre a la máquina, tipo Linux y Versión Debian (64-bit).
 https://github.com/alejandroruizweb/cursus42/blob/main/borntoberoot/003.png
