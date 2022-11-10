@@ -50,7 +50,7 @@ Para poder crear nuestra máquina virtual Born2beroot necesitaremos dos cosas:
 * Oracle VirtualBox que ya está instalado en los equipos en 42.
 * La imagen de disco de Debian, que podemos descargar desde la web oficial.
 https://github.com/alejandroruizweb/cursus42/blob/main/borntoberoot/008.png
-Antes de comenzar debemos asegurarnos de crear un directorio en la siguiente ruta /sgoinfre/goinfre/Perso/ y eliminar los permisos hasta que quede así "drwx------"
+Antes de comenzar debemos asegurarnos de crear un directorio en la siguiente ruta /sgoinfre/goinfre/Perso/ y eliminar los permisos hasta que quede así "drwx------", con el comando "chmod 700".
 Una vez instalado VirtualBox, podemos comenzar a configurar nuestra máquina virtual.
 https://github.com/alejandroruizweb/cursus42/blob/main/borntoberoot/001.png
 En la parte superior izquierda de la ventana principal de VirtualBox, haga clic en New para comenzar.
@@ -66,5 +66,5 @@ https://github.com/alejandroruizweb/cursus42/blob/main/borntoberoot/005.png
 Una imagen de disco de VirtualBox es perfecta para nuestros propósitos.
 https://github.com/alejandroruizweb/cursus42/blob/main/borntoberoot/006.png
 Podemos dejar que el disco duro se asigne dinámicamente.
-En los equipos de 42, debemos crear la máquina virtual en la carpeta /sgoinfre/goinfre/Perso/my_login por cuestiones de espacio.
-En caso contrario, podemos ponerlo en un USB lo suficientemente grande o en un disco duro externo para poder moverlo más tarde.
+https://github.com/alejandroruizweb/cursus42/blob/main/borntoberoot/009.png
+Asignamos 30 GB aproximadamente.
