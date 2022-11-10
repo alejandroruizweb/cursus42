@@ -68,3 +68,22 @@ https://github.com/alejandroruizweb/cursus42/blob/main/borntoberoot/006.png
 Podemos dejar que el disco duro se asigne dinámicamente.
 https://github.com/alejandroruizweb/cursus42/blob/main/borntoberoot/009.png
 Asignamos 30 GB aproximadamente.
+¡Ahí! ¡Nuestra máquina virtual Born2beroot ha sido creada!
+## Instalación de Debian en Born2beroot
+Dado que la máquina virtual no tiene sistema operativo, VirtualBox nos pedirá que elijamos un disco desde el que arrancar cuando la iniciemos por primera vez.
+https://github.com/alejandroruizweb/cursus42/blob/main/borntoberoot/010.png
+Aquí debemos elegir el .iso Jle que hemos descargado previamente, que contiene todos los Jles necesarios para instalar Debian.
+La máquina arrancará desde ese disco y una interfaz gráfica nos guiará a través de la instalación de Debian.
+https://github.com/alejandroruizweb/cursus42/blob/main/borntoberoot/011.png
+Debemos elegir Instalar. Una interfaz gráfica está explícitamente prohibida en el tema Born2beroot, por lo que no podemos elegir "Instalación gráfica".
+https://github.com/alejandroruizweb/cursus42/blob/main/borntoberoot/012.png
+https://github.com/alejandroruizweb/cursus42/blob/main/borntoberoot/013.png
+Elijo instalarlo en Español con el teclado español también.
+https://github.com/alejandroruizweb/cursus42/blob/main/borntoberoot/014.png
+Como se indica en el enunciado de Born2beroot, el nombre de host debe ser nuestro inicio de sesión intra seguido de 42
+https://github.com/alejandroruizweb/cursus42/blob/main/borntoberoot/015.png
+El dominio lo dejamos en blanco.
+https://github.com/alejandroruizweb/cursus42/blob/main/borntoberoot/016.png
+Para el superusuario root, es muy importante definir una contraseña segura. Para mostrar la contraseña en claro, seleccione esa opción y presione la barra espaciadora. La siguiente pantalla, por supuesto, nos pedirá que confirmemos la contraseña. ¡No lo olvides!
+... un nombre de usuario (tendremos que tener un usuario con nuestro inicio de sesión intra como nombre de usuario para nuestra evaluación de Born2beroot, así que también podríamos hacerlo ahora) ... Seguir los pasos indicados Nombre, nombre de usuario y sus contraseñas.
+https://github.com/alejandroruizweb/cursus42/blob/main/borntoberoot/017.png
