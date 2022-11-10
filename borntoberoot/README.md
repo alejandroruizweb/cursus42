@@ -58,5 +58,9 @@ https://github.com/alejandroruizweb/cursus42/blob/main/borntoberoot/003.png
 En cuanto al tamaño de la memoria, podemos dejar el valor por defecto, 1024 MB.
 https://github.com/alejandroruizweb/cursus42/blob/main/borntoberoot/004.png
 Ahora, nos gustaría crear un nuevo disco duro virtual.
+https://github.com/alejandroruizweb/cursus42/blob/main/borntoberoot/005.png
+Una imagen de disco de VirtualBox es perfecta para nuestros propósitos.
+https://github.com/alejandroruizweb/cursus42/blob/main/borntoberoot/006.png
+Podemos dejar que el disco duro se asigne dinámicamente.
 En los equipos de 42, debemos crear la máquina virtual en la carpeta /sgoinfre/goinfre/Perso/my_login por cuestiones de espacio.
 En caso contrario, podemos ponerlo en un USB lo suficientemente grande o en un disco duro externo para poder moverlo más tarde.
