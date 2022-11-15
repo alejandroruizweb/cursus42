@@ -1,26 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alruiz-c <alruiz-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/20 14:03:58 by alruiz-c          #+#    #+#             */
-/*   Updated: 2022/10/06 12:42:50 by alruiz-c         ###   ########.fr       */
+/*   Created: 2022/10/11 19:36:06 by alruiz-c          #+#    #+#             */
+/*   Updated: 2022/10/11 19:37:21 by alruiz-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* ISDIGIT = Si el caracter está entre el 0 y el 9 se devuelve 1. */
 #include "libft.h"
 
-int	ft_isdigit(int c)
+void	ft_putstr_fd(char *s, int fd)
 {
-	if (c >= '0' && c <= '9')
+	int	i;
+
+	if (s != NULL)
 	{
-		return (1);
-	}
-	else
-	{
-		return (0);
+		i = 0;
+		while (s[i])
+		{
+			ft_putchar_fd(s[i], fd);
+			i++;
+		}
 	}
 }

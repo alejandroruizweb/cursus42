@@ -6,13 +6,12 @@
 /*   By: alruiz-c <alruiz-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 11:40:18 by alruiz-c          #+#    #+#             */
-/*   Updated: 2022/09/29 11:40:45 by alruiz-c         ###   ########.fr       */
+/*   Updated: 2022/10/18 15:19:19 by alruiz-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*TOLOWER = Convierte a minúsculas.*/
 #include	"libft.h"
-#include <ctype.h>
-#include <stdio.h>
 
 int	ft_tolower(int c)
 {

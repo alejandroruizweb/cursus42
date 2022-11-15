@@ -6,12 +6,12 @@
 /*   By: alruiz-c <alruiz-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 17:21:46 by alruiz-c          #+#    #+#             */
-/*   Updated: 2022/09/30 09:56:53 by alruiz-c         ###   ########.fr       */
+/*   Updated: 2022/10/18 15:18:58 by alruiz-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*STRCHR = Devuelve la string a partir de coincidir con el último caracter c.*/
 #include "libft.h"
-#include <stdio.h>
 
 char	*ft_strrchr(const char *s, int c)
 {

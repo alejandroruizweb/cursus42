@@ -6,12 +6,12 @@
 /*   By: alruiz-c <alruiz-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/04 18:30:30 by alruiz-c          #+#    #+#             */
-/*   Updated: 2022/10/04 19:00:26 by alruiz-c         ###   ########.fr       */
+/*   Updated: 2022/10/18 15:16:13 by alruiz-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*Convierte un número de un string a un int*/
 #include "libft.h"
-#include <stdio.h>
 
 int	ft_atoi(const char *str)
 {

@@ -1,26 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alruiz-c <alruiz-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/20 14:03:58 by alruiz-c          #+#    #+#             */
-/*   Updated: 2022/10/06 12:42:50 by alruiz-c         ###   ########.fr       */
+/*   Created: 2022/10/11 19:16:37 by alruiz-c          #+#    #+#             */
+/*   Updated: 2022/10/20 16:56:52 by alruiz-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* ISDIGIT = Si el caracter está entre el 0 y el 9 se devuelve 1. */
+/*A cada carácter de s le realiza la función f. Genera una nueva string.*/
 #include "libft.h"
 
-int	ft_isdigit(int c)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	if (c >= '0' && c <= '9')
+	char	*str;
+	int		i;
+
+	i = 0;
+	if (!s || !f)
+		return (NULL);
+	str = (char *)malloc(sizeof(*s) * ft_strlen(s) + 1);
+	if (!str)
+		return (NULL);
+	while (s[i])
 	{
-		return (1);
+		str[i] = f(i, s[i]);
+		i++;
 	}
-	else
-	{
-		return (0);
-	}
+	str[i] = '\0';
+	return (str);
 }

@@ -1,26 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alruiz-c <alruiz-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/20 14:03:58 by alruiz-c          #+#    #+#             */
-/*   Updated: 2022/10/06 12:42:50 by alruiz-c         ###   ########.fr       */
+/*   Created: 2022/10/12 10:42:23 by alruiz-c          #+#    #+#             */
+/*   Updated: 2022/10/18 15:17:01 by alruiz-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* ISDIGIT = Si el caracter está entre el 0 y el 9 se devuelve 1. */
+/* Creamos un nuevo nodo que apunta al contenido de content. Como este newnodo
+es el primer (y último nodo) tiene que apuntar a NULL*/
 #include "libft.h"
 
-int	ft_isdigit(int c)
+t_list	*ft_lstnew(void *content)
 {
-	if (c >= '0' && c <= '9')
-	{
-		return (1);
-	}
-	else
-	{
-		return (0);
-	}
+	t_list	*newnodo;
+
+	newnodo = (t_list *)malloc(sizeof(t_list));
+	if (!newnodo)
+		return (NULL);
+	newnodo->content = content;
+	newnodo->next = NULL;
+	return (newnodo);
 }

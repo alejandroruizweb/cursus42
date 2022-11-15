@@ -6,11 +6,12 @@
 /*   By: alruiz-c <alruiz-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/30 10:03:22 by alruiz-c          #+#    #+#             */
-/*   Updated: 2022/10/04 10:44:34 by alruiz-c         ###   ########.fr       */
+/*   Updated: 2022/10/20 16:26:40 by alruiz-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+/*STRNCMP = Compara n caracteres en dos cadenas y devuelve la diferencia.
+Lo que devuelve es un negativo o un positivo.*/
 #include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)

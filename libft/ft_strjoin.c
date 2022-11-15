@@ -1,26 +1,42 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alruiz-c <alruiz-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/20 14:03:58 by alruiz-c          #+#    #+#             */
-/*   Updated: 2022/10/06 12:42:50 by alruiz-c         ###   ########.fr       */
+/*   Created: 2022/10/11 16:33:40 by alruiz-c          #+#    #+#             */
+/*   Updated: 2022/10/20 11:37:48 by alruiz-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* ISDIGIT = Si el caracter está entre el 0 y el 9 se devuelve 1. */
+/*Devuelve una substring formada por la concatenación de s1 y s2*/
 #include "libft.h"
 
-int	ft_isdigit(int c)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
-	if (c >= '0' && c <= '9')
+	char	*str;
+	size_t	i;
+	size_t	j;
+
+	i = 0;
+	j = 0;
+	if (!s1 || !s2)
+		return (NULL);
+	str = (char *)malloc (sizeof(*str) * (ft_strlen(s1) + ft_strlen(s2) + 1));
+	if (!str)
+		return (NULL);
+	while (s1[i] != '\0')
 	{
-		return (1);
+		str[i] = s1[i];
+		i++;
 	}
-	else
+	while (s2[j] != '\0')
 	{
-		return (0);
+		str[i] = s2[j];
+		i++;
+		j++;
 	}
+	str[i] = '\0';
+	return (str);
 }

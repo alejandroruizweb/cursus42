@@ -1,26 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_lstadd_back_bonus.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alruiz-c <alruiz-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/20 14:03:58 by alruiz-c          #+#    #+#             */
-/*   Updated: 2022/10/06 12:42:50 by alruiz-c         ###   ########.fr       */
+/*   Created: 2022/10/13 11:49:09 by alruiz-c          #+#    #+#             */
+/*   Updated: 2022/10/13 11:57:44 by alruiz-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* ISDIGIT = Si el caracter está entre el 0 y el 9 se devuelve 1. */
 #include "libft.h"
 
-int	ft_isdigit(int c)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	if (c >= '0' && c <= '9')
+	t_list	*aux;
+
+	if (!new)
+		return ;
+	if (!*lst)
 	{
-		return (1);
+		*lst = new;
+		return ;
 	}
-	else
-	{
-		return (0);
-	}
+	aux = ft_lstlast(*lst);
+	aux->next = new;
 }

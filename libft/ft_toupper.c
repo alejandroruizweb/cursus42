@@ -6,13 +6,12 @@
 /*   By: alruiz-c <alruiz-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/29 10:32:52 by alruiz-c          #+#    #+#             */
-/*   Updated: 2022/09/29 11:34:37 by alruiz-c         ###   ########.fr       */
+/*   Updated: 2022/10/18 15:19:24 by alruiz-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*TOUPPER = Convierte a mayúsculas.*/
 #include	"libft.h"
-#include <ctype.h>
-#include <stdio.h>
 
 int	ft_toupper(int c)
 {

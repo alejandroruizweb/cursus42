@@ -6,11 +6,12 @@
 /*   By: alruiz-c <alruiz-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/04 15:36:22 by alruiz-c          #+#    #+#             */
-/*   Updated: 2022/10/04 16:21:00 by alruiz-c         ###   ########.fr       */
+/*   Updated: 2022/10/18 15:17:17 by alruiz-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+/*MEMCMP = Compara n bytes en dos cadenas y devuelve la diferencia.
+Lo que devuelve es un negativo o un positivo.*/
 #include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)

@@ -6,11 +6,12 @@
 /*   By: alruiz-c <alruiz-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/23 11:30:23 by alruiz-c          #+#    #+#             */
-/*   Updated: 2022/09/27 17:09:42 by alruiz-c         ###   ########.fr       */
+/*   Updated: 2022/10/18 15:17:29 by alruiz-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+/*MEMMOVE = Copia los primeros "len" caracteres de src a dst y te mantiene los
+restantes caracteres de dst*/
 #include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)

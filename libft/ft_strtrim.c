@@ -1,34 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alruiz-c <alruiz-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/26 10:12:48 by alruiz-c          #+#    #+#             */
-/*   Updated: 2022/10/18 15:18:23 by alruiz-c         ###   ########.fr       */
+/*   Created: 2022/10/11 18:19:09 by alruiz-c          #+#    #+#             */
+/*   Updated: 2022/10/20 11:50:59 by alruiz-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*STRLCPY = Copia "size" caracteres -1 de src a dst y devuelve 
-el tamaño de src*/
+/*Elimina de s1 los caracteres que se dan en set desde el principio y
+desde el final.*/
 #include "libft.h"
+#include <stdio.h>
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t size)
+char	*ft_strtrim(char const *s1, char const *set)
 {
+	char	*str;
 	size_t	i;
-	size_t	idx;
 
-	i = 0;
-	idx = 0;
-	while (src[i])
-		i++;
-	while (src[idx] && idx + 1 < size)
+	if (!s1 || !set)
+		return (NULL);
+	while (*s1 && ft_strchr(set, *s1))
+		s1++;
+	i = ft_strlen(s1);
+	while (i && ft_strchr(set, s1[i]))
 	{
-		((char *) dst)[idx] = ((char *) src)[idx];
-		idx++;
+		i--;
 	}
-	if (size)
-		dst[idx] = '\0';
-	return (i);
+	str = ft_substr ((char *)s1, 0, i + 1);
+	return (str);
 }
+
+//int	main()
+//{
+//	printf("%s \n", ft_strtrim("0155555550", "05"));
+//}

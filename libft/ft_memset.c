@@ -6,13 +6,12 @@
 /*   By: alruiz-c <alruiz-c@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/22 11:24:51 by alruiz-c          #+#    #+#             */
-/*   Updated: 2022/09/22 18:20:07 by alruiz-c         ###   ########.fr       */
+/*   Updated: 2022/10/18 15:17:39 by alruiz-c         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+/*MEMSET = Escribe "c" un número de veces "len" en el string "b"*/
 #include "libft.h"
-#include <string.h>
-#include <stdio.h>
 
 void	*ft_memset(void *b, int c, size_t len)
 {
