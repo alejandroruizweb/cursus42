@@ -19,93 +19,70 @@ _¿Qué necesitamos realmente para que esto funcione?, una función que lea el a
 y otra que elimine del \n para atrás y actualice._
 
 ```
-Da un ejemplo
+Hola que tal \n
+estás tú \n
+amigo \n
+Suponiendo que el BUFFER_SIZE que suministre la Moulinette sea 5 hará lo siguiente: Lee 5 caracteres: "Hola_", 
+como no encuentra \n continua con otros 5 "que_t" y los suma a lo que ya había "Hola que t". 
+Lee otros 5 "al_\ne". Aquí ya encuentra un \n y nos devolvería "Hola que tal \n". 
+Actualizaría nuestra variable estática eliminando hasta el \n, recordemos que ya tenemos leído 
+"Hola que tal \n e", puies habría que actualizar para quedarnos con "e" y seguimos leyendo 5 más "stás_" 
+y se lo sumamos a lo que ya tenemos "estás_". Otros 5 "tú \n am" y devolvemos línea así hasta que ya no nos quede más que leer.  
 ```
 
-### Instalación 🔧
+### ¿Y cómo probamos que esto funciona? 🔧
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
+_Pues supongo que ya sabrás de nuestro amigo PACO, más conocido formalmente como [Francinette](https://github.com/xicodomingues/francinette).
+Pero como nos gusta hacer las cosas manualmente veamos un Main._
 
-_Dí cómo será ese paso_
-
-```
-Da un ejemplo
-```
-
-_Y repite_
+_main.c_
 
 ```
-hasta finalizar
+#include "get_next_line.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <fcntl.h>
+
+int	main(void)
+{
+	int fd;
+	char *str;
+
+	fd = open("prueba.txt", O_RDONLY);
+
+	str = get_next_line(fd);
+
+	while (str != NULL)
+	{
+		printf("cadena leida: %s", str);
+		str = get_next_line(fd);
+	}
+	return (0);
+}
 ```
 
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
-
-## Ejecutando las pruebas ⚙️
-
-_Explica como ejecutar las pruebas automatizadas para este sistema_
-
-### Analice las pruebas end-to-end 🔩
-
-_Explica que verifican estas pruebas y por qué_
+_prueba.txt_
 
 ```
-Da un ejemplo
+hola que tal
+estás tú
+amigo
 ```
 
-### Y las pruebas de estilo de codificación ⌨️
-
-_Explica que verifican estas pruebas y por qué_
+_Y compliando y ejecutando nos devolvería:_
 
 ```
-Da un ejemplo
+Cadena leida: hola que tal
+Cadena leida: estás tú
+Cadena leida: amigo
 ```
 
-## Despliegue 📦
 
-_Agrega notas adicionales sobre como hacer deploy_
+## ¡Mil gracias! 🎁
 
-## Construido con 🛠️
-
-_Menciona las herramientas que utilizaste para crear tu proyecto_
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
-
-## Contribuyendo 🖇️
-
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
-
-## Wiki 📖
-
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
-
-## Versionado 📌
-
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
-
-## Autores ✒️
-
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
-
-## Licencia 📄
-
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
-
-## Expresiones de Gratitud 🎁
-
-* Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
-* Dona con cripto a esta dirección: `0xf253fc233333078436d111175e5a76a649890000`
-* etc.
+* Pues muchas gracias a Jo´se Estrada Cordero, más conocido en estos lares de 42 Málaga por joestrad. 
+* Sin su ayuda le podría estar dando vueltas todavía al fallo que me daba ft_strjoin 📢
 
 
 
 ---
-⌨️ con ❤️ por [Villanuevand](https://github.com/Villanuevand) 😊
