@@ -57,6 +57,7 @@ int	main(void)
 		printf("cadena leida: %s", str);
 		str = get_next_line(fd);
 	}
+	close (fd);
 	return (0);
 }
 ```
