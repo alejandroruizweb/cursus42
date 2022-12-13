@@ -80,7 +80,7 @@ Cadena leida: amigo
 
 ## ¡Mil gracias! 🎁
 
-* Pues muchas gracias a Jo´se Estrada Cordero, más conocido en estos lares de 42 Málaga por joestrad. 
+* Pues muchas gracias a José Estrada Cordero, más conocido en estos lares de 42 Málaga por joestrad. 
 * Sin su ayuda le podría estar dando vueltas todavía al fallo que me daba ft_strjoin 📢
 
 
