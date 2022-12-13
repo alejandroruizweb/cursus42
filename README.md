@@ -4,5 +4,6 @@ En este repositorio se encuentran los proyectos realizados para el Cursus de 42 
 
 ### `ft_libft --> 125/100`
 ### `ft_printf --> 100/100`
+### `Born to Be Root --> 125/100
 
 In this repository you will find the projects carried out for the 42 Málaga Cursus. Unless otherwise indicated, they are not evaluated.
